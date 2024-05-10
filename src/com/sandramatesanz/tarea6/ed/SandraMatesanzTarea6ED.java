@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.sandramatesanz.tarea6.ed;
+package com.sandramatesanz.tarea6.ed; //Para quitar el Code Smell: cambiamos el nombre del paquete.
 
 
 /**

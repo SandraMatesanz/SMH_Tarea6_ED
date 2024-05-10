@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.sandramatesanz.tarea6.ed;
+package com.sandramatesanz.tarea6.ed; ////Para quitar el Code Smell: cambiamos el nombre del paquete.
 
 /**
  *
@@ -11,12 +11,16 @@ package com.sandramatesanz.tarea6.ed;
  */
 public class Tarea6EDClase {
     
+    
+    //Para quitar el Code Smell: Realizamos una refactorización de extracción de constante para eliminar números mágicos (0.8 y 0.95).
     private static final double PORCENTAJE_DESCUENTO_CON_PRODUCTOS = 0.8;
     private static final double PORCENTAJE_DESCUENTO_SIN_PRODUCTOS = 0.95;
     
     
-    public void aplicarDescuento(double precioProducto, int numeroProductos) {
+    //Para quitar el Code Smell: Realizamos una refactorización de de renombrado (de numeroProductos a numeroProductos).
+    public void aplicarDescuento(double precioProducto, int numeroProductos) { 
         
+        //Para quitar el Code Smell: Realizamos una refactorización de de renombrado (de Total a total).
         double total;
 
         if (numeroProductos > 3) {
@@ -32,6 +36,7 @@ public class Tarea6EDClase {
         imprimirTotal(total);
     }    
 
+    //Para quitar el Code Smell: Realizamos una refactorización de extracción de método mediante el método "imprimirTotal".
     private void imprimirTotal(double total) {
         System.out.println("El total a pagar es: " + total); 
         System.out.println("Enviado");
